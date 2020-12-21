@@ -1,26 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 // import { Flex } from "@adobe/react-spectrum";
 
-export class Navbar extends Component {
-  static defaultProps = {
-    title: "Nav Title",
-    desc: "Nav description",
-  };
+const Navbar = ({ title, desc }) => {
+  // const { title, desc } = props;
+  return (
+    <nav className="navbar bg-primary">
+      <button>{title}</button>
+      <button>{desc}</button>
+    </nav>
+  );
+};
 
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-    desc: PropTypes.string,
-  };
+Navbar.defaultProps = {
+  title: "Github Finder",
+  desc: "Search for users",
+};
 
-  render() {
-    return (
-      <nav className="navbar bg-primary">
-        <button>{this.props.title}</button>
-        <button>{this.props.desc}</button>
-      </nav>
-    );
-  }
-}
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string,
+};
 
 export default Navbar;
