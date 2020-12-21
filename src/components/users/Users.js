@@ -22,24 +22,6 @@ class Users extends Component {
         avatar_url: "https://avatars1.githubusercontent.com/u/17?v=4",
         html_url: "https://github.com/vanpelt",
       },
-      {
-        id: "1",
-        login: "ckashby",
-        avatar_url: "https://avatars0.githubusercontent.com/u/474960?v=4",
-        html_url: "https://github.com/ckashby",
-      },
-      {
-        id: "2",
-        login: "pjhyett",
-        avatar_url: "https://avatars0.githubusercontent.com/u/3?v=4",
-        html_url: "https://github.com/pjhyett",
-      },
-      {
-        id: "3",
-        login: "vanpelt",
-        avatar_url: "https://avatars1.githubusercontent.com/u/17?v=4",
-        html_url: "https://github.com/vanpelt",
-      },
     ],
   };
 
