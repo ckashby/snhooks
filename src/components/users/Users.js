@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import UserItem from "./UserItem";
+import axios from "axios";
 
 class Users extends Component {
   state = {

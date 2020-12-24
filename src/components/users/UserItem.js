@@ -1,7 +1,13 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const UserItem = (props) => {
-  const { login, html_url, avatar_url } = props.user;
+const UserItem = ({ user: { login, html_url, avatar_url } }) => {
+  // const { login, html_url, avatar_url } = props.user;
+  UserItem.propTypes = {
+    login: PropTypes.string.isRequired,
+    html_url: PropTypes.string.isRequired,
+    avatar_url: PropTypes.string.isRequired,
+  };
 
   return (
     <div className="card text-center">
