@@ -1,3 +1,15 @@
+// rafce
+import App from "@spectrum-icons/workflow/App";
+import React from "react";
+
+const Test = () => {
+  return <div></div>;
+};
+
+export default Test;
+
+//clg
+
 // rfc
 import React from "react";
 
@@ -15,5 +27,3 @@ export class Test extends Component {
 }
 
 export default Test;
-
-// I do not like the functional component.  Arrow please!

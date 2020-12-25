@@ -7,8 +7,6 @@ export class UserPage extends Component {
     return (
       <div>
         <Navbar />
-        <h2>User List</h2>
-        <hr />
         <div className="container">
           <Users />
         </div>
