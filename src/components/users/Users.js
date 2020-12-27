@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Flex, View } from "@adobe/react-spectrum";
 import UserItem from "./UserItem";
 import axios from "axios";
 
