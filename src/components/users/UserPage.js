@@ -3,34 +3,18 @@ import Navbar from "../layout/Navbar";
 import Users from "./Users";
 import styled from "styled-components";
 
-const Wrapper = styled.section`
-  background-color: salmon;
-  margin: auto;
-  padding: 1em;
-`;
+const buttClick = () => {
+  alert("You clicked me");
+};
 
 const MyButt = styled.button`
-  color: yellow;
-  font-size: 24px;
-  font-weight: bold;
-  min-width: fit-content;
-  margin: 32px;
-  background-color: blue;
-  padding: 8px;
-  border-radius: 12px;
+  font-size: 36px;
+  color: green;
+  background: white;
+  border-radius: 1em;
+  padding: 0.2em;
   box-shadow: 0 4px 8px grey;
 `;
-
-const Title = styled.h1`
-  color: green;
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-`;
-
-const alertMe = () => {
-  alert("No is the time...");
-};
 
 export class UserPage extends Component {
   render() {
@@ -38,10 +22,7 @@ export class UserPage extends Component {
       <div>
         <Navbar />
         <div className="container">
-          <MyButt onClick={alertMe}>Hola mi amigos</MyButt>
-          <Wrapper>
-            <Title>Welcome</Title>
-          </Wrapper>
+          <MyButt onClick={buttClick}>Testing</MyButt>
           <Users />
         </div>
       </div>
