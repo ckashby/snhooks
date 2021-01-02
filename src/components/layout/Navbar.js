@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Flex, View } from "@adobe/react-spectrum";
+// import { Flex, View } from "@adobe/react-spectrum";
 
 const Navbar = ({ title, desc }) => {
   // const { title, desc } = props;
