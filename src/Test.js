@@ -10,12 +10,14 @@ export default Test;
 
 //clg
 
-// rfc
+// rfce
 import React from "react";
 
-export default function Test() {
+function Test() {
   return <div></div>;
 }
+
+export default Test;
 
 // rce
 import React, { Component } from "react";
