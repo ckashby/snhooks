@@ -4,13 +4,6 @@ import { Flex, View } from "@adobe/react-spectrum";
 
 const Navbar = ({ title, desc }) => {
   // const { title, desc } = props;
-  const colors = [
-    {
-      color: "celery-600",
-    },
-    { color: "celery-600" },
-    { color: "celery-600" },
-  ];
   return (
     <nav className="navbar bg-primary">
       <button>{title}</button>
