@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+//Path = /testUsers!!!!!!!!
+
 function Users() {
   const [users, setUsers] = useState([]);
 
@@ -19,14 +21,12 @@ function Users() {
       <hr />
       {users.map((user) => {
         return (
-          <>
-            <p>
-              <strong>{user.name} :</strong> {user.email} <br />
-              {user.address.city}
-              <br />
-              {user.company.catchPhrase}
-            </p>
-          </>
+          <p key={user.id}>
+            <strong>{user.name} :</strong> {user.email} <br />
+            {user.address.city}
+            <br />
+            {user.company.catchPhrase}
+          </p>
         );
       })}
     </>

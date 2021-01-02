@@ -11,7 +11,9 @@ const GithubUser = ({ login, avatar_url, html_url }) => {
         alt="user avatar"
       />
       <h3 style={{ color: "green" }}>{login}</h3>
-      <a href={html_url}>More...</a>
+      <a className="btn btn-dark" href={html_url}>
+        More info...
+      </a>
     </div>
   );
 };
