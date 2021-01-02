@@ -10,6 +10,12 @@ const Github = () => {
   useEffect(() => {
     axios.get("https://api.github.com/users").then((response) => {
       setUsers(response.data);
+      const cid = process.env.REACT_APP_GITHUB_CLIENT_ID;
+      const sid = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
+      console.log(cid);
+      console.log(sid);
+      // const ckid = process.env.CKID;
+      // console.log(ckid);
     });
   }, []);
 
