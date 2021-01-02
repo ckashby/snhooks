@@ -27,7 +27,7 @@ const Github = () => {
       <ul>
         {users.map(({ login, avatar_url, html_url }) => {
           return (
-            <div>
+            <div key={login}>
               <GithubUser
                 login={login}
                 avatar_url={avatar_url}

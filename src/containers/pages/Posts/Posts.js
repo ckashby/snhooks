@@ -21,7 +21,7 @@ function Posts() {
       <hr />
       <ul>
         {posts.map((post) => {
-          return <li>{post.title}</li>;
+          return <li key={post.id}>{post.title}</li>;
         })}
       </ul>
     </>
