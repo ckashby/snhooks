@@ -14,8 +14,6 @@ const Github = () => {
       const sid = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
       console.log(cid);
       console.log(sid);
-      // const ckid = process.env.CKID;
-      // console.log(ckid);
     });
   }, []);
 
@@ -27,13 +25,12 @@ const Github = () => {
       <ul>
         {users.map(({ login, avatar_url, html_url }) => {
           return (
-            <div key={login}>
-              <GithubUser
-                login={login}
-                avatar_url={avatar_url}
-                html_url={html_url}
-              />
-            </div>
+            <GithubUser
+              key={login}
+              login={login}
+              avatar_url={avatar_url}
+              html_url={html_url}
+            />
           );
         })}
       </ul>

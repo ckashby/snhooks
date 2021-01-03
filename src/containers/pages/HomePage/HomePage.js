@@ -34,6 +34,9 @@ class HomePage extends Component {
           <li>
             <Link to="/users">Users</Link>
           </li>
+          <li>
+            <Link to="/context">Context</Link>
+          </li>
         </ul>
       </>
     );
