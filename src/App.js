@@ -8,6 +8,7 @@ import Posts from "./containers/pages/Posts/Posts";
 import TestUsers from "./containers/pages/Users/Users";
 import Github from "./containers/pages/Github/Github";
 import UserPage from "./components/users/UserPage";
+import ContextPage from "./containers/pages/ContextPage/ContextPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/testUsers" component={TestUsers} />
         <Route path="/github" component={Github} />
         <Route path="/users" component={UserPage} />
+        <Route path="/context" component={ContextPage} />
       </Router>
     </>
   );

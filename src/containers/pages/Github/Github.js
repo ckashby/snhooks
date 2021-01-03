@@ -21,13 +21,12 @@ const Github = () => {
       <ul>
         {users.map(({ login, avatar_url, html_url }) => {
           return (
-            <div>
-              <GithubUser
-                login={login}
-                avatar_url={avatar_url}
-                html_url={html_url}
-              />
-            </div>
+            <GithubUser
+              key={login}
+              login={login}
+              avatar_url={avatar_url}
+              html_url={html_url}
+            />
           );
         })}
       </ul>
